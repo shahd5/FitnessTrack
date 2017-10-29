@@ -1,0 +1,189 @@
+<! DOCTYPE>
+<html>
+    <head>
+            <title>Fitness First</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+            <link rel="stylesheet" href="main.css"> 
+          
+            <style>
+                h1 span.spacer{
+                    padding : 0 5px;
+                }
+
+              
+                .modal1 {
+                    display: none; 
+                    position: fixed; 
+                    z-index: 1; 
+                    left: 0;
+                    top: 0;
+                    width: 100%; 
+                    height: 100%; 
+                    overflow: auto; 
+                    background-color: rgb(0,0,0); 
+                    background-color: rgba(0,0,0,0.4); 
+                    padding-top: 60px;
+                }
+                .container{
+                    background-color: #6059a0;
+                }
+           
+            </style>
+             
+    </head>
+    <body>
+            <div class="container">
+                <div class="menubar">
+                    <button class="optionbutton">Files</button>
+                    <div class="menubar-content">
+                        <a href="">Open</a>
+                        <a href="">Save</a>
+                    </div>
+                </div>     
+                <div class="menubar1">
+                    <button class="optionbutton1">Option</button>
+                    <div class="menubar-content1">
+                        <a href="">Network</a>
+                        <a href="">Social</a>
+                    </div>
+                </div> 
+                <div class="menubar1">
+                    <button class="optionbutton1">Home</button>
+                </div>
+                <div class="menubar1">
+                    <button class="optionbutton1">Rules</button>
+                </div>
+                <div class="menubar1">
+                    <button class="optionbutton1">Cool Fitness Trick</button>
+                </div>
+                <div class="menubar1">
+                    <button class="optionbutton1">Sign In</button>
+                </div>   
+            </div>
+
+
+            <div class="container" >
+                <div class="jumbotron,card" style="position:relative;padding-bottom: 1%">  
+                    
+                        <img class="card-img-top" src="download1.jpg" alt="Card image cap">
+                        <h1 style="position: absolute ; top: 200px ;
+                        left: 10; width: 100%"><span>Welcome to Fitness First<span class ="spacer"></span></span></h1>
+                        
+                    
+                </div>
+            
+    
+                <div class="row" style=" padding-bottom: 5%">
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <img class="card-img-top" src="download.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Signup</h4>
+                                <p class="card-text">To work on your fitness, to live a healty life, to achive your fitness goal and be successfull Signup now!!</p>
+                                <a href="#" class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Sign up!!</a>
+                                
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="col-md-4">
+                            <div class="card" >
+                                    <img class="card-img-top" src="dowload3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rules</h4>
+                                        <p class="card-text">There is only one rules. To come on the web-site everyday and keep track of your fitness</p>
+                                        <a href="rulebook.html" class="btn btn-primary">Rule Book</a>
+                                    </div>
+                                </div>
+                                
+                    </div>
+                    <div class="col-md-4">
+                            <div class="card" >
+                                    <img class="card-img-top" src="download4.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Body buiding tricks</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'"> Build your body</a>
+                                    </div>
+                                </div>
+                        
+                    </div>
+                </div>                
+            </div>
+
+            
+            <div class="modal1" id="id01">
+                <form class="container" style="background-color: initial ; width:35%">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="color: #080808;cursor: pointer;">×</span>
+                        
+                        <div class="row col-md-12" >
+                            <div class="card card-body">
+                                <h2>Signup Form</h2>
+                                <label><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email"  required>
+    
+                                <label><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password"  required>
+    
+                                <label><b>Repeat Password</b></label>
+                                <input type="password" placeholder="Repeat Password" required>
+
+                                <label><b>Height</b></label>
+                                <input type="password" placeholder="Height" required>
+
+                                <label><b>Weight</b></label>
+                                <input type="password" placeholder="Weight" required>
+                                <div>
+                                    <input type="checkbox" checked="checked"><span style"">Remember me</span>
+                                </div>
+                                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    
+                                <div class="row" style ="padding-left: 10px">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">Cancel</button>
+                                <b style="padding-left: 10px"><button type="submit" class="">Sign Up</button></b>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+            </div>
+
+            <div class="modal1" id="id02">
+                    <form class="container" style="background-color: initial ; width:35%">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal" style="color: #080808;cursor: pointer;">×</span>
+                            
+                            <div class="row col-md-12" >
+                                <div class="card card-body">
+                                    <h2>Sign In Form</h2>
+                                    <label><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email"  required>
+        
+                                    <label><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password"  required>
+        
+                                    
+                                    <div>
+                                        <input type="checkbox" checked="checked"><span style"">Remember me</span>
+                                    </div>
+                                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        
+                                    <div class="row" style ="padding-left: 10px">
+                                        <button type="button" onclick="document.getElementById('id02').style.display='none'" title="Close Modal">Cancel</button>
+                                        <b style="padding-left: 10px"></b><button type="submit" onclick="location.href = 'http://localhost:3000/todo'" class="">Hit Sign In to see the next page</button></b>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+            </div>
+           
+
+            
+            
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+           
+            
+    </body>
+</html>

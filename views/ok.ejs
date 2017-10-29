@@ -1,0 +1,136 @@
+<! DOCTYPE>
+<html>
+    <head>
+            <title>Fitness First</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+            <!-- <link rel="stylesheet" href="main.css">  -->
+
+            <style>
+                /* canvas styles */
+               
+
+                /* draggable targets */
+                [data-draggable="target"]
+                {
+                   
+                    list-style-type:none;
+                    
+                    width:50%;
+                    height:400px;
+                    overflow-y:auto;
+                    
+                    border:2px solid #888;
+                    border-radius:0.2em;
+                    
+                    background:plum;
+                    color:#555;
+                }
+
+                /* drop target state */
+                [data-draggable="target"][aria-dropeffect="move"]
+                {
+                    border-color:#68b;
+
+                    background:#fff;
+                }
+
+                /* drop target focus and dragover state */
+                [data-draggable="target"][aria-dropeffect="move"]:focus,
+                [data-draggable="target"][aria-dropeffect="move"].dragover
+                {
+                    outline:none;
+                    
+                    box-shadow:0 0 0 1px #fff, 0 0 0 3px #68b;
+                }
+
+                /* draggable items */
+                [data-draggable="item"]
+                {
+                    display:block;
+                    list-style-type:none;
+                    
+                    margin:0 0 2px 0;
+                    padding:0.2em 0.4em;
+                    
+                    border-radius:0.2em;
+                    
+                    line-height:1.3;
+                }
+
+                /* items focus state */
+                [data-draggable="item"]:focus
+                {
+                    outline:none;
+                    
+                    box-shadow:0 0 0 2px #68b, inset 0 0 0 1px #ddd;
+                }
+
+                /* items grabbed state */
+                [data-draggable="item"][aria-grabbed="true"]
+                {
+                    background:#8ad;
+                    color:#fff;
+                }
+
+            </style>
+    </head>
+    <body>
+        
+            <div class="container">
+                    <div class="menubar">
+                        <button class="optionbutton">Files</button>
+                        <div class="menubar-content">
+                            <a href="">Open</a>
+                            <a href="">Save</a>
+                        </div>
+                    </div>     
+                    <div class="menubar1">
+                        <button class="optionbutton1">Option</button>
+                        <div class="menubar-content1">
+                            <a href="">Network</a>
+                            <a href="">Social</a>
+                        </div>
+                    </div> 
+                    <div class="menubar1">
+                        <button onclick="location.href = 'index.html'" class="optionbutton1">Home</button>
+                    </div>
+                    <div class="menubar1">
+                        <button class="optionbutton1">Rules</button>
+                    </div>
+                    <div class="menubar1">
+                        <button class="optionbutton1">Cool Fitness Trick</button>
+                    </div>
+                    <div class="menubar1">
+                        <button class="optionbutton1">Sign In</button>
+                    </div>   
+            </div>
+
+            <div class = "row" style="margin-left: 391px;margin-right: 391px"> 
+                <h3 class = "col">List of Exercise</h3>
+                <h3 class = "col">List of Exercise Finished</h3>
+            </div>
+            <div class = "row" style="margin-left: 391px;margin-right: 391px">
+                
+                <ol  data-draggable="target">
+                        <li data-draggable="item">Squat</li>
+                        <li data-draggable="item">Leg press</li>
+                        <li data-draggable="item">Deadlift</li>
+                        <li data-draggable="item">Leg extension</li>
+                        <li data-draggable="item">Wall sit</li>
+                        <li data-draggable="item">Leg curl</li>
+                        <li data-draggable="item">Snatch.</li>
+                        <li data-draggable="item">Standing calf raise</li>
+                </ol>
+                
+                <ol class = "" data-draggable="target">
+                        
+                </ol>
+                <button type="button" class="btn btn-primary" >Save Progress</button>
+            </div>
+
+            
+            <script src="/assets/fun.js"></script>
+    </body>
+</html>
