@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
 import { NavComponent } from './nav.component';
-
+import {Component, ViewChild} from "@angular/core";
+import {CreateNewAutocompleteGroup, SelectedAutocompleteItem, NgAutocompleteComponent} from "ng-auto-complete";
+ 
 
 
 
@@ -11,6 +12,8 @@ import { NavComponent } from './nav.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
   title = 'Fitness';
   
 }

@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/main.css"> 
 
-<h1>{{name}}</h1>
+<h1>Welcome</h1><h1>{{name}}</h1>
 
 <div >
     <table class="table table-striped">
@@ -10,14 +10,29 @@
             <tr>
                 <th>Schedule</th>
                 <th>Exercise</th>
-                <th>Status</th>
+               
             </tr>
         </thead>
         <tbody *ngFor="let message of messages">
-                <td>{{message.morning}}{{name}}</td>
+                <td  >{{message.morning}}</td>
                 <td>{{message.evening}}</td>
+              
+                <td><button (click)="select($index)">Select</button></td>
+                <td><button>Cancel</button></td>
+        </tbody> 
+    </table>
+    <h1>List of excercise selected</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Schedule</th>
+                <th>Exercise</th>
+            </tr>
+        </thead>
+        <tbody >
+                <td>{{index}}</td>
+                <td>{{index}}</td>
                 <td>{{data}}</td>
-                <td><button>Select</button></td>
                 <td><button>Cancel</button></td>
         </tbody> 
     </table>

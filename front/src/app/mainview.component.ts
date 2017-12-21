@@ -43,7 +43,11 @@ export class MainviewComponent {
 
      
   }
-
+  select(index){
+    console.log(index);
+    this.done = this.route.snapshot.params.name;
+  }
+  done =[];
   messages = [];
   data:string;
 

@@ -29,5 +29,8 @@
     </div>
     <div class="menubar1">
         <button class="optionbutton1" routerLink="/login">Sign In</button>
-    </div>   
+    </div>
+      
 </div>
+<div class="container">    <ng-autocomplete (selected)="Selected($event)" [classes]="['']" [group]="group"></ng-autocomplete>    
+</div> 
