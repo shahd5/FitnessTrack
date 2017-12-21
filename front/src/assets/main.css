@@ -1,0 +1,49 @@
+.container {
+    overflow: hidden;
+    background-color:blueviolet;
+    font-family: Arial;
+}
+
+ .menubar , .menubar1{
+    float: left;
+    overflow: hidden;
+} 
+
+.menubar .optionbutton , .menubar1 .optionbutton1 {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.optionbutton:hover , .optionbutton1:hover {
+    background-color: violet;
+}
+
+ .menubar-content, .menubar-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} 
+
+.menubar-content a , .menubar-content1 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none; 
+    display: block;
+    text-align: center;
+}
+
+.menubar-content a:hover , .menubar-content1 a:hover {
+    background-color: #ddd;
+}
+
+.menubar:hover .menubar-content , .menubar1:hover .menubar-content1 {
+    display: block;
+}

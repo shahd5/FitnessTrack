@@ -1,0 +1,35 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/main.css"> 
+
+
+
+<div>
+    <form class="container" style="background-color: initial ; width:35%">
+            <span routerLink="/" style="color: #080808;cursor: pointer;">×</span>
+            
+            <div class="row col-md-12" >
+                <div class="card card-body">
+                    <h2>Sign In Form</h2>
+                    <label><b>Email</b></label>
+                    <input type="text" name="" placeholder="Enter Email"  required>
+  
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password"  required>
+  
+                    
+                    <!-- <div>
+                        <input type="checkbox" checked="checked"><span></span>Remember me</span>
+                    </div> -->
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  
+                    <div class="row" style ="padding-left: 10px">
+                        <button routerLink="/">Cancel</button>
+                        <b style="padding-left: 10px"></b><b><button (click)="loginFB()" >Hit Sign In with facebook</button></b>
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
+
+<!-- routerLink = "/list" -->

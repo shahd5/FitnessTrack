@@ -1,0 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/main.css"> 
+
+<h1>{{name}}</h1>
+
+<div >
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Schedule</th>
+                <th>Exercise</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let message of messages">
+                <td>{{message.morning}}{{name}}</td>
+                <td>{{message.evening}}</td>
+                <td>{{data}}</td>
+                <td><button>Select</button></td>
+                <td><button>Cancel</button></td>
+        </tbody> 
+    </table>
+</div>  
