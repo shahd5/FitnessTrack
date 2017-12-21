@@ -1,3 +1,4 @@
+import { async } from '@angular/core/testing';
 import { MainviewComponent } from './mainview.component';
 import { Injectable } from '@angular/core';
 import{ Http} from '@angular/http';
@@ -45,7 +46,7 @@ export class WebService{
     }
     
 
-    loginFB() {
+  async  loginFB() {
         FB.login((response: any) => {
             if (response.authResponse) {
 
